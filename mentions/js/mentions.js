@@ -49,15 +49,18 @@ function formatEmote(m) {
 }
 
 function formatMessage(line) {
-  username = line.split('|')[1].split(':')[0]
+  username = line.split('|')[1].split(':')[0].trim()
   line_message = line.substring(line.indexOf(username) + username.length + 2)
+  var timestamp = line.split('|')[0].trimStart()
+  console.error(timestamp)
 
-  return `<div class="msg-chat msg-user msg-highlight"><a class="user ">${username}</a><span class="ctrl">: </span> <span class="text">${line_message}</span></div>`
+  return `<div class="msg-chat msg-user msg-highlight"><div class="timestamp">${timestamp}</div><a class="user ">${username}</a><span class="ctrl">: </span> <span class="text">${line_message}</span></div>`
 }
 
 function setDisplay() {
   args = getUrlVars()
-  $.get("https://cors-anywhere.herokuapp.com/" + args.url, function(data) {
+  $.get("https://yacdn.org/serve/" + args.url, function(data) {
+    console.error(typeof data)
     lines = data.split('\r\n')
     $.getJSON("./emotes.json", function(json) {
       emotesArray = Object.values(json.default)

@@ -19,7 +19,7 @@ html {
 body {
   margin: 0;
   position: fixed;
-  left: 40%;
+  left: 0%;
   overflow: hidden; }
 
 /**
@@ -746,9 +746,7 @@ label small {
 #chat-output-frame {
   grid-row: output;
   overflow: hidden;
-  width: 360px;
-  border-right: 4px solid rgba(255, 255, 255, 0.25);
-  border-left: 4px solid rgba(255, 255, 255, 0.25); }
+  width: 100%; }
 
 #chat-input-frame {
   grid-row: input;
@@ -927,7 +925,6 @@ label small {
   clear: both;
   word-wrap: break-word;
   padding: 3px 12px 3px 7px;
-  margin-top: 1px;
   color: #B9B9B9; }
 
 .msg-chat hr {
@@ -1019,9 +1016,6 @@ label small {
   margin: 0;
   opacity: 1;
   vertical-align: sub; }
-
-.msg-chat:first-child {
-  margin-top: -1px; }
 
 .msg-chat:last-child {
   margin-bottom: 0.5em; }
@@ -1377,7 +1371,7 @@ a.flair12:hover {
   background-color: #002547;
   padding-top: 2.7px;
   padding-bottom: 2.4px;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
   border-top: 1px solid #082c4d;
   border-bottom: 1px solid #082c4d; }
 
@@ -2083,3 +2077,8 @@ button.btn {
   color: #333333;
   background-color: #FFFFFF;
   border-color: #EEEEEE; }
+
+.timestamp {
+  font-size: 11px;
+  color: #969696;
+  display: inline !important; }
