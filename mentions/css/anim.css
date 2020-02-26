@@ -1,0 +1,583 @@
+.chat-emote-OverRustle {
+  animation: 100ms 7 OverRustle-anim; }
+
+@keyframes OverRustle-anim {
+  0% {
+    left: 0; }
+  100% {
+    left: 3px; } }
+  .chat-emote-OverRustle:hover {
+    animation-iteration-count: infinite; }
+
+.chat-emote-MLADY {
+  transform-origin: 4px bottom;
+  animation: 250ms 3 MLADY-anim; }
+
+@keyframes MLADY-anim {
+  0% {
+    transform: rotate(0deg); }
+  30% {
+    transform: rotate(20deg); }
+  80% {
+    transform: rotate(-10deg); }
+  100% {
+    transform: rotate(0deg); } }
+  .chat-emote-MLADY:hover {
+    animation-iteration-count: infinite; }
+
+.chat-emote-SpookerZ {
+  animation: 250ms 3 SpookerZ-anim; }
+
+@keyframes SpookerZ-anim {
+  0% {
+    transform: translate(0px 0px); }
+  25% {
+    transform: translate(0px, 4px); }
+  75% {
+    transform: rotate(-10deg); }
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 4px bottom; } }
+  .chat-emote-SpookerZ:hover {
+    animation-iteration-count: infinite; }
+
+.chat-emote-DANKMEMES {
+  animation: 1s 2 DANKMEMES-anim; }
+
+@keyframes DANKMEMES-anim {
+  0%, 100% {
+    filter: hue-rotate(0deg); }
+  50% {
+    filter: hue-rotate(360deg); } }
+  .chat-emote-DANKMEMES:hover {
+    animation-iteration-count: infinite; }
+
+.chat-emote-WEEWOO {
+  animation: 1.5s 1 WEEWOO-anim; }
+
+@keyframes WEEWOO-anim {
+  0%, 100% {
+    opacity: 1; }
+  10% {
+    opacity: 0.5;
+    filter: hue-rotate(0deg); }
+  11% {
+    filter: hue-rotate(170deg); }
+  35% {
+    opacity: 1; }
+  50% {
+    opacity: 0.2;
+    filter: hue-rotate(170deg); }
+  51% {
+    filter: hue-rotate(310deg); }
+  65% {
+    opacity: 1; }
+  90% {
+    opacity: 0.2;
+    filter: hue-rotate(310deg); }
+  91% {
+    filter: hue-rotate(0deg); } }
+  .chat-emote-WEEWOO:hover {
+    animation-iteration-count: infinite; }
+
+.chat-emote-Nappa {
+  animation: 750ms 1 Nappa-anim; }
+
+@keyframes Nappa-anim {
+  0% {
+    transform: translate(0px 0px) scale(0.5); }
+  5%, 15%, 25%, 35% {
+    transform: translate(0px, 3px); }
+  15%, 35%, 55% {
+    transform: translate(0px, -3px); }
+  10%, 20%, 30%, 40%, 50% {
+    transform: translate(3px, 0px); }
+  15.1% {
+    transform: scale(0.5);
+    filter: hue-rotate(-5deg); }
+  30.1% {
+    transform: scale(0.75);
+    opacity: 0.75;
+    filter: hue-rotate(-5deg) saturate(125%); }
+  60% {
+    transform: scale(1.25);
+    filter: hue-rotate(-25deg) saturate(150%);
+    opacity: 0.75; }
+  70% {
+    opacity: 0; }
+  90% {
+    opacity: 0;
+    transform: scale(0.1); }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 1; } }
+  .chat-emote-Nappa:hover {
+    animation-iteration-count: infinite; }
+
+.chat-emote-Hhhehhehe {
+  animation: 500ms 1 Hhhehhehe-anim; }
+
+@keyframes Hhhehhehe-anim {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg); }
+  20% {
+    transform: translate(0px, 3px) rotate(-6deg); }
+  40% {
+    transform: translate(0px, 0px) rotate(0deg); }
+  60% {
+    transform: translate(0px, 3px) rotate(-6deg); }
+  80% {
+    transform: translate(0px, 0px) rotate(0deg); }
+  100% {
+    transform: translate(0px, 3px) rotate(-6deg); } }
+  .chat-emote-Hhhehhehe:hover {
+    animation-iteration-count: infinite; }
+
+.chat-emote-REE {
+  animation: 100ms 7 REE-anim; }
+
+@keyframes REE-anim {
+  from {
+    left: 0; }
+  to {
+    left: 3px; } }
+  .chat-emote-REE:hover {
+    animation-iteration-count: infinite; }
+
+.chat-emote-ITSRAWWW {
+  animation: 100ms 7 ITSRAWWW-anim; }
+
+@keyframes ITSRAWWW-anim {
+  0% {
+    left: 0; }
+  100% {
+    left: 2px; } }
+  .chat-emote-ITSRAWWW:hover {
+    animation-iteration-count: infinite; }
+
+.chat-emote-DJPepo {
+  animation: 500ms 7 DJPepo-anim; }
+
+@keyframes DJPepo-anim {
+  0% {
+    top: 10; }
+  100% {
+    top: 12px; } }
+  .chat-emote-DJPepo:hover {
+    animation-iteration-count: infinite; }
+  .chat-emote-DJPepo-animate-forever {
+    animation-iteration-count: infinite; }
+
+.chat-emote-NeneLaugh {
+  animation: 200ms 5 NeneLaugh-anim; }
+
+@keyframes NeneLaugh-anim {
+  0% {
+    transform: translate(0px, 0px); }
+  50% {
+    transform: translate(0px, 3px); }
+  100% {
+    transform: translate(0px, 0px); } }
+  .chat-emote-NeneLaugh:hover {
+    animation-iteration-count: infinite; }
+  .chat-emote-NeneLaugh-animate-forever {
+    animation-iteration-count: infinite; }
+
+.chat-emote-PepeLaugh {
+  animation: 200ms 5 PepeLaugh-anim; }
+
+@keyframes PepeLaugh-anim {
+  0% {
+    transform: translate(0px, 0px); }
+  50% {
+    transform: translate(0px, 3px); }
+  100% {
+    transform: translate(0px, 0px); } }
+  .chat-emote-PepeLaugh:hover {
+    animation-iteration-count: infinite; }
+  .chat-emote-PepeLaugh-animate-forever {
+    animation-iteration-count: infinite; }
+
+@keyframes emote-hit {
+  0% {
+    color: #B91010;
+    font-size: 200%; }
+  1% {
+    color: #FFF7F9;
+    font-size: 190%; }
+  2% {
+    color: #B91010;
+    font-size: 200%; }
+  3% {
+    color: #FFF7F9;
+    font-size: 190%; }
+  4% {
+    color: #B91010;
+    font-size: 200%; }
+  100% {
+    color: #FFF7F9;
+    font-size: 120%; } }
+
+@keyframes rustle {
+  from {
+    left: 0; }
+  to {
+    left: 3px; } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes dankmemes-anim {
+  0%, 100% {
+    filter: hue-rotate(0deg); }
+  50% {
+    filter: hue-rotate(360deg); } }
+
+@keyframes Shekels-anim {
+  0% {
+    top: -25px; }
+  99% {
+    top: 30px; }
+  100% {
+    top: -25px; } }
+
+.chat-emote.chat-emote-NOBULLY:hover {
+  filter: invert(100%); }
+
+@keyframes MiyanoHype-anim {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -320px; } }
+
+.chat-emote-MiyanoHype {
+  width: 32px;
+  height: 32px;
+  margin-top: -32px;
+  background: url("../assets/emotes-animated/MiyanoHype.png") left center;
+  animation: MiyanoHype-anim 800ms steps(10) 3 none; }
+  .chat-emote-MiyanoHype:hover {
+    animation: MiyanoHype-anim 800ms steps(10) infinite; }
+  .chat-emote-MiyanoHype-animate-forever {
+    animation: MiyanoHype-anim 800ms steps(10) infinite; }
+
+@keyframes Clap-anim {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -44px; } }
+
+.chat-emote-Clap {
+  width: 22px;
+  height: 32px;
+  margin-top: -32px;
+  background: url("../assets/emotes-animated/Clap.png") left center;
+  animation: Clap-anim 400ms steps(2) 5 none; }
+  .chat-emote-Clap:hover {
+    animation: Clap-anim 400ms steps(2) infinite; }
+  .chat-emote-Clap-animate-forever {
+    animation: Clap-anim 400ms steps(2) infinite; }
+
+@keyframes COGGERS-anim {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -1920px; } }
+
+.chat-emote-COGGERS {
+  width: 32px;
+  height: 32px;
+  margin-top: -32px;
+  background: url("../assets/emotes-animated/COGGERS.png") left center;
+  animation: COGGERS-anim 800ms steps(60) 2 none; }
+  .chat-emote-COGGERS:hover {
+    animation: COGGERS-anim 800ms steps(60) infinite; }
+  .chat-emote-COGGERS-animate-forever {
+    animation: COGGERS-anim 800ms steps(60) infinite; }
+
+@keyframes CuckCrab-anim {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -640px; } }
+
+.chat-emote-CuckCrab {
+  width: 32px;
+  height: 32px;
+  margin-top: -32px;
+  background: url("../assets/emotes-animated/CuckCrab.png") left center;
+  animation: CuckCrab-anim 600ms steps(20) 5 none; }
+  .chat-emote-CuckCrab:hover {
+    animation: CuckCrab-anim 600ms steps(20) infinite; }
+  .chat-emote-CuckCrab-animate-forever {
+    animation: CuckCrab-anim 600ms steps(20) infinite; }
+
+@keyframes RaveDoge-anim {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -1276px; } }
+
+.chat-emote-RaveDoge {
+  width: 44px;
+  height: 30px;
+  margin-top: -30px;
+  background: url("../assets/emotes-animated/RaveDoge.png") left center;
+  animation: RaveDoge-anim 2000ms steps(29) 3 none; }
+  .chat-emote-RaveDoge:hover {
+    animation: RaveDoge-anim 2000ms steps(29) infinite; }
+  .chat-emote-RaveDoge-animate-forever {
+    animation: RaveDoge-anim 2000ms steps(29) infinite; }
+
+@keyframes PepoDance-anim {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -460px; } }
+
+.chat-emote-PepoDance {
+  width: 46px;
+  height: 32px;
+  margin-top: -32px;
+  background: url("../assets/emotes-animated/PepoDance.png") left center;
+  animation: PepoDance-anim 500ms steps(10) 5 none; }
+  .chat-emote-PepoDance:hover {
+    animation: PepoDance-anim 500ms steps(10) infinite; }
+  .chat-emote-PepoDance-animate-forever {
+    animation: PepoDance-anim 500ms steps(10) infinite; }
+
+@keyframes PepeJam-anim {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -132px; } }
+
+.chat-emote-PepeJam {
+  width: 33px;
+  height: 32px;
+  margin-top: -32px;
+  background: url("../assets/emotes-animated/PepeJam.png") left center;
+  animation: PepeJam-anim 250ms steps(4) 8 none; }
+  .chat-emote-PepeJam:hover {
+    animation: PepeJam-anim 250ms steps(4) infinite; }
+  .chat-emote-PepeJam-animate-forever {
+    animation: PepeJam-anim 250ms steps(4) infinite; }
+
+@keyframes LAG-anim {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -360px; } }
+
+.chat-emote-LAG {
+  width: 40px;
+  height: 32px;
+  margin-top: -32px;
+  background: url("../assets/emotes-animated/LAG.png") left center;
+  animation: LAG-anim 4000ms steps(9) 2 none;
+  background-position: 40px; }
+  .chat-emote-LAG:hover {
+    animation: LAG-anim 4000ms steps(9) infinite; }
+
+@keyframes SNAP-anim {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -750px; } }
+
+.chat-emote-SNAP {
+  width: 50px;
+  height: 32px;
+  margin-top: -32px;
+  background: url("../assets/emotes-animated/SNAP.png") left center;
+  animation: SNAP-anim 1000ms steps(15) 2 none; }
+  .chat-emote-SNAP:hover {
+    animation: SNAP-anim 1000ms steps(15) infinite; }
+  .chat-emote-SNAP-animate-forever {
+    animation: SNAP-anim 1000ms steps(15) infinite; }
+
+@keyframes VroomVroom-anim {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -3232px; } }
+
+.chat-emote-VroomVroom {
+  width: 32px;
+  height: 32px;
+  margin-top: -32px;
+  background: url("../assets/emotes-animated/VroomVroom.png") left center;
+  animation: VroomVroom-anim 4000ms steps(101) 2 none; }
+  .chat-emote-VroomVroom:hover {
+    animation: VroomVroom-anim 4000ms steps(101) infinite; }
+  .chat-emote-VroomVroom-animate-forever {
+    animation: VroomVroom-anim 4000ms steps(101) infinite; }
+
+@keyframes loliDance-anim {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -756px; } }
+
+.chat-emote-loliDance {
+  width: 28px;
+  height: 32px;
+  margin-top: -32px;
+  background: url("../assets/emotes-animated/loliDance.png") left center;
+  animation: loliDance-anim 3000ms steps(27) 2 none; }
+  .chat-emote-loliDance:hover {
+    animation: loliDance-anim 3000ms steps(27) infinite; }
+  .chat-emote-loliDance-animate-forever {
+    animation: loliDance-anim 3000ms steps(27) infinite; }
+
+@keyframes WAG-anim {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -76px; } }
+
+.chat-emote-WAG {
+  width: 38px;
+  height: 32px;
+  margin-top: -32px;
+  background: url("../assets/emotes-animated/WAG.png") left center;
+  animation: WAG-anim 500ms steps(2) 10 none; }
+  .chat-emote-WAG:hover {
+    animation: WAG-anim 500ms steps(2) infinite; }
+  .chat-emote-WAG-animate-forever {
+    animation: WAG-anim 500ms steps(2) infinite; }
+
+@keyframes ComfyWAG-anim {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -76px; } }
+
+.chat-emote-ComfyWAG {
+  width: 38px;
+  height: 32px;
+  margin-top: -32px;
+  background: url("../assets/emotes-animated/ComfyWAG.png") left center;
+  animation: ComfyWAG-anim 500ms steps(2) 10 none; }
+  .chat-emote-ComfyWAG:hover {
+    animation: ComfyWAG-anim 500ms steps(2) infinite; }
+  .chat-emote-ComfyWAG-animate-forever {
+    animation: ComfyWAG-anim 500ms steps(2) infinite; }
+
+@keyframes illyaTriggered-anim {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -256px; } }
+
+.chat-emote-illyaTriggered {
+  width: 32px;
+  height: 32px;
+  margin-top: -32px;
+  background: url("../assets/emotes-animated/illyaTriggered.png") left center;
+  animation: illyaTriggered-anim 400ms steps(8) 4 none; }
+  .chat-emote-illyaTriggered:hover {
+    animation: illyaTriggered-anim 400ms steps(8) infinite; }
+  .chat-emote-illyaTriggered-animate-forever {
+    animation: illyaTriggered-anim 400ms steps(8) infinite; }
+
+@keyframes OhISee-anim {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -640px; } }
+
+.chat-emote-OhISee {
+  width: 32px;
+  height: 32px;
+  margin-top: -32px;
+  background: url("../assets/emotes-animated/OhISee.png") left center;
+  animation: OhISee-anim 1200ms steps(20) 2 none; }
+  .chat-emote-OhISee:hover {
+    animation: OhISee-anim 1200ms steps(20) infinite; }
+
+@keyframes FeelsCountryMan-anim {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -480px; } }
+
+.chat-emote-FeelsCountryMan {
+  width: 32px;
+  height: 32px;
+  margin-top: -32px;
+  background: url("../assets/emotes-animated/FeelsCountryMan.png") left center;
+  animation: FeelsCountryMan-anim 850ms steps(15) 4 none; }
+  .chat-emote-FeelsCountryMan:hover {
+    animation: FeelsCountryMan-anim 850ms steps(15) infinite; }
+  .chat-emote-FeelsCountryMan-animate-forever {
+    animation: FeelsCountryMan-anim 850ms steps(15) infinite; }
+
+@keyframes SNAP-anim {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -180px; } }
+
+.chat-emote-SNAP {
+  width: 30px;
+  height: 30px;
+  margin-top: -30px;
+  background: url("../assets/emotes-animated/SNAP.png") left center;
+  animation: SNAP-anim 360ms steps(6) 2 none; }
+  .chat-emote-SNAP:hover {
+    animation: SNAP-anim 360ms steps(6) infinite; }
+
+@keyframes HiHi-anim {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -570px; } }
+
+.chat-emote-HiHi {
+  width: 30px;
+  height: 30px;
+  margin-top: -30px;
+  background: url("../assets/emotes-animated/HiHi.png") left center;
+  animation: HiHi-anim 1900ms steps(19) 2 none; }
+  .chat-emote-HiHi:hover {
+    animation: HiHi-anim 1900ms steps(19) infinite; }
+  .chat-emote-HiHi-animate-forever {
+    animation: HiHi-anim 1900ms steps(19) infinite; }
+
+@keyframes HACKER-anim {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -768px; } }
+
+.chat-emote-HACKER {
+  width: 48px;
+  height: 32px;
+  margin-top: -32px;
+  background: url("../assets/emotes-animated/HACKER.png") left center;
+  animation: HACKER-anim 1600ms steps(16) 2 none; }
+  .chat-emote-HACKER:hover {
+    animation: HACKER-anim 1600ms steps(16) infinite; }
+  .chat-emote-HACKER-animate-forever {
+    animation: HACKER-anim 1600ms steps(16) infinite; }
+
+@keyframes KEKW-anim {
+  0% {
+    background-position: 0; }
+  100% {
+    background-position: -1024px; } }
+
+.chat-emote-KEKW {
+  width: 64px;
+  height: 32px;
+  margin-top: -32px;
+  background: url("../assets/emotes-animated/KEKW.png") left center;
+  animation: KEKW-anim 400ms steps(16) 7 none; }
+  .chat-emote-KEKW:hover {
+    animation: KEKW-anim 400ms steps(16) infinite; }
+  .chat-emote-KEKW-animate-forever {
+    animation: KEKW-anim 400ms steps(16) infinite; }

@@ -1,0 +1,885 @@
+.chat-emote.chat-emote-4Head, .chat-emote.chat-emote-Abathur, .chat-emote.chat-emote-AngelThump, .chat-emote.chat-emote-ApeHands, .chat-emote.chat-emote-ASLAN, .chat-emote.chat-emote-AYAWeird, .chat-emote.chat-emote-AYAYA, .chat-emote.chat-emote-BabyRage, .chat-emote.chat-emote-BasedGod, .chat-emote.chat-emote-BASEDWATM8, .chat-emote.chat-emote-BERN, .chat-emote.chat-emote-BibleThump, .chat-emote.chat-emote-billyWeird, .chat-emote.chat-emote-BOGGED, .chat-emote.chat-emote-BOOMER, .chat-emote.chat-emote-CampFire, .chat-emote.chat-emote-cmonBruh, .chat-emote.chat-emote-ComfyApe, .chat-emote.chat-emote-ComfyAYA, .chat-emote.chat-emote-ComfyCat, .chat-emote.chat-emote-ComfyDog, .chat-emote.chat-emote-ComfyFeels, .chat-emote.chat-emote-ComfyFerret, .chat-emote.chat-emote-ComfyPOTATO, .chat-emote.chat-emote-ComfyWeird, .chat-emote.chat-emote-ComfyYEE, .chat-emote.chat-emote-DaFeels, .chat-emote.chat-emote-DAFUK, .chat-emote.chat-emote-DANKMEMES, .chat-emote.chat-emote-DappaKappa, .chat-emote.chat-emote-DatGeoff, .chat-emote.chat-emote-DELUSIONAL, .chat-emote.chat-emote-DJPepo, .chat-emote.chat-emote-DOUBT, .chat-emote.chat-emote-DuckerZ, .chat-emote.chat-emote-ECH, .chat-emote.chat-emote-EleGiggle, .chat-emote.chat-emote-EZ, .chat-emote.chat-emote-FeelsAmazingMan, .chat-emote.chat-emote-FeelsBadMan, .chat-emote.chat-emote-FeelsDumbMan, .chat-emote.chat-emote-FeelsGoodMan, .chat-emote.chat-emote-FeelsOkayMan, .chat-emote.chat-emote-FeelsPepoMan, .chat-emote.chat-emote-FeelsWeirdMan, .chat-emote.chat-emote-FerretLOL, .chat-emote.chat-emote-FIDGETLOL, .chat-emote.chat-emote-gachiGASM, .chat-emote.chat-emote-GameOfThrows, .chat-emote.chat-emote-GIMI, .chat-emote.chat-emote-GODMAN, .chat-emote.chat-emote-GREED, .chat-emote.chat-emote-haHAA, .chat-emote.chat-emote-HEADSHOT, .chat-emote.chat-emote-Hhhehhehe, .chat-emote.chat-emote-Hmmm, .chat-emote.chat-emote-INFESTOR, .chat-emote.chat-emote-ITSRAWWW, .chat-emote.chat-emote-JimFace, .chat-emote.chat-emote-Kappa, .chat-emote.chat-emote-KING, .chat-emote.chat-emote-Klappa, .chat-emote.chat-emote-Kreygasm, .chat-emote.chat-emote-LeRuse, .chat-emote.chat-emote-LUL, .chat-emote.chat-emote-MASTERB8, .chat-emote.chat-emote-MiyanoBird, .chat-emote.chat-emote-MiyanoComfy, .chat-emote.chat-emote-MiyanoSip, .chat-emote.chat-emote-MLADY, .chat-emote.chat-emote-monkaHmm, .chat-emote.chat-emote-monkaMEGA, .chat-emote.chat-emote-monkaS, .chat-emote.chat-emote-monkaVirus, .chat-emote.chat-emote-MOOBERS, .chat-emote.chat-emote-MotherFuckinGame, .chat-emote.chat-emote-Nappa, .chat-emote.chat-emote-NeneLaugh, .chat-emote.chat-emote-NiceMeMe, .chat-emote.chat-emote-NOBULLY, .chat-emote.chat-emote-NOM, .chat-emote.chat-emote-NoTears, .chat-emote.chat-emote-NotLikeThis, .chat-emote.chat-emote-NOTMYTEMPO, .chat-emote.chat-emote-OBJECTION, .chat-emote.chat-emote-OhKrappa, .chat-emote.chat-emote-OhMyDog, .chat-emote.chat-emote-OMEGALUL, .chat-emote.chat-emote-OnlyPretending, .chat-emote.chat-emote-ORDAH, .chat-emote.chat-emote-OsKrappa, .chat-emote.chat-emote-OSTRIGGERED, .chat-emote.chat-emote-OverRustle, .chat-emote.chat-emote-PeepoHappy, .chat-emote.chat-emote-PeepoRiot, .chat-emote.chat-emote-PeepoS, .chat-emote.chat-emote-PeepoWeird, .chat-emote.chat-emote-PEPE, .chat-emote.chat-emote-PepeComfy, .chat-emote.chat-emote-Pepega, .chat-emote.chat-emote-PepeHands, .chat-emote.chat-emote-PepeLaugh, .chat-emote.chat-emote-PepeMods, .chat-emote.chat-emote-PepoBan, .chat-emote.chat-emote-PepoComfy, .chat-emote.chat-emote-PepoFight, .chat-emote.chat-emote-PepoG, .chat-emote.chat-emote-PepoGood, .chat-emote.chat-emote-PepoHmm, .chat-emote.chat-emote-PepOk, .chat-emote.chat-emote-PepoPirate, .chat-emote.chat-emote-PepoThink, .chat-emote.chat-emote-PepoWant, .chat-emote.chat-emote-PIKOHH, .chat-emote.chat-emote-PogChamp, .chat-emote.chat-emote-POGGERS, .chat-emote.chat-emote-POKE, .chat-emote.chat-emote-POTATO, .chat-emote.chat-emote-RedCard, .chat-emote.chat-emote-REE, .chat-emote.chat-emote-Riperino, .chat-emote.chat-emote-SadBenis, .chat-emote.chat-emote-sataniaLUL, .chat-emote.chat-emote-SEMPAI, .chat-emote.chat-emote-shyLurk, .chat-emote.chat-emote-Sippy, .chat-emote.chat-emote-SLEEPY, .chat-emote.chat-emote-SMOrc, .chat-emote.chat-emote-SoDoge, .chat-emote.chat-emote-SOTRIGGERED, .chat-emote.chat-emote-SOY, .chat-emote.chat-emote-SpookerZ, .chat-emote.chat-emote-SPY, .chat-emote.chat-emote-SUGOI, .chat-emote.chat-emote-SUGOwO, .chat-emote.chat-emote-SURPRISE, .chat-emote.chat-emote-SWEATY, .chat-emote.chat-emote-TRUMPED, .chat-emote.chat-emote-umaruCry, .chat-emote.chat-emote-UWOTM8, .chat-emote.chat-emote-WEEWOO, .chat-emote.chat-emote-WeirdChamp, .chat-emote.chat-emote-weSmart, .chat-emote.chat-emote-WhoahDude, .chat-emote.chat-emote-Wowee, .chat-emote.chat-emote-YEE, .chat-emote.chat-emote-ZOOMER {
+  background-image: url("./emoticons.png");
+  background-repeat: no-repeat; }
+
+.chat-emote.chat-emote-4Head {
+  background-position: -434px -164px;
+  width: 22px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-Abathur {
+  background-position: -0px -64px;
+  width: 82px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-AngelThump {
+  background-position: -0px -32px;
+  width: 95px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-ApeHands {
+  background-position: -370px -102px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-ASLAN {
+  background-position: -183px -66px;
+  width: 41px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-AYAWeird {
+  background-position: -267px -102px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-AYAYA {
+  background-position: -183px -32px;
+  width: 41px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-BabyRage {
+  background-position: -402px -224px;
+  width: 28px;
+  height: 28px;
+  margin-top: -28px; }
+
+.chat-emote.chat-emote-BasedGod {
+  background-position: -402px -128px;
+  width: 29px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-BASEDWATM8 {
+  background-position: -0px -196px;
+  width: 38px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-BERN {
+  background-position: -183px -0px;
+  width: 45px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-BibleThump {
+  background-position: -80px -196px;
+  width: 36px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-billyWeird {
+  background-position: -370px -134px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-BOGGED {
+  background-position: -267px -136px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-BOOMER {
+  background-position: -267px -170px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-CampFire {
+  background-position: -370px -0px;
+  width: 30px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-cmonBruh {
+  background-position: -267px -204px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-ComfyApe {
+  background-position: -370px -166px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-ComfyAYA {
+  background-position: -0px -260px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-ComfyCat {
+  background-position: -370px -198px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-ComfyDog {
+  background-position: -230px -34px;
+  width: 34px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-ComfyFeels {
+  background-position: -34px -260px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-ComfyFerret {
+  background-position: -230px -68px;
+  width: 34px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-ComfyPOTATO {
+  background-position: -370px -230px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-ComfyWeird {
+  background-position: -230px -102px;
+  width: 34px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-ComfyYEE {
+  background-position: -68px -260px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-DaFeels {
+  background-position: -102px -260px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-DAFUK {
+  background-position: -370px -262px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-DANKMEMES {
+  background-position: -102px -32px;
+  width: 72px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-DappaKappa {
+  background-position: -341px -328px;
+  width: 26px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-DatGeoff {
+  background-position: -434px -262px;
+  width: 21px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-DELUSIONAL {
+  background-position: -267px -0px;
+  width: 33px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-DJPepo {
+  background-position: -136px -260px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-DOUBT {
+  background-position: -170px -260px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-DuckerZ {
+  background-position: -51px -130px;
+  width: 56px;
+  height: 26px;
+  margin-top: -26px; }
+
+.chat-emote.chat-emote-ECH {
+  background-position: -402px -254px;
+  width: 28px;
+  height: 28px;
+  margin-top: -28px; }
+
+.chat-emote.chat-emote-EleGiggle {
+  background-position: -402px -284px;
+  width: 28px;
+  height: 28px;
+  margin-top: -28px; }
+
+.chat-emote.chat-emote-EZ {
+  background-position: -230px -136px;
+  width: 34px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-FeelsAmazingMan {
+  background-position: -370px -294px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-FeelsBadMan {
+  background-position: -370px -326px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-FeelsDumbMan {
+  background-position: -109px -130px;
+  width: 32px;
+  height: 26px;
+  margin-top: -26px; }
+
+.chat-emote.chat-emote-FeelsGoodMan {
+  background-position: -68px -362px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-FeelsOkayMan {
+  background-position: -204px -260px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-FeelsPepoMan {
+  background-position: -238px -260px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-FeelsWeirdMan {
+  background-position: -302px -0px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-FerretLOL {
+  background-position: -38px -228px;
+  width: 33px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-FIDGETLOL {
+  background-position: -143px -130px;
+  width: 25px;
+  height: 25px;
+  margin-top: -25px; }
+
+.chat-emote.chat-emote-gachiGASM {
+  background-position: -100px -362px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-GameOfThrows {
+  background-position: -102px -0px;
+  width: 79px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-GIMI {
+  background-position: -39px -162px;
+  width: 36px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-GODMAN {
+  background-position: -118px -196px;
+  width: 36px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-GREED {
+  background-position: -370px -34px;
+  width: 30px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-haHAA {
+  background-position: -132px -362px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-HEADSHOT {
+  background-position: -0px -0px;
+  width: 100px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-Hhhehhehe {
+  background-position: -183px -132px;
+  width: 35px;
+  height: 25px;
+  margin-top: -25px; }
+
+.chat-emote.chat-emote-Hmmm {
+  background-position: -73px -228px;
+  width: 33px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-INFESTOR {
+  background-position: -267px -34px;
+  width: 33px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-ITSRAWWW {
+  background-position: -156px -64px;
+  width: 25px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-JimFace {
+  background-position: -68px -328px;
+  width: 31px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-Kappa {
+  background-position: -434px -0px;
+  width: 24px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-KING {
+  background-position: -191px -162px;
+  width: 35px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-Klappa {
+  background-position: -108px -228px;
+  width: 33px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-Kreygasm {
+  background-position: -434px -294px;
+  width: 21px;
+  height: 28px;
+  margin-top: -28px; }
+
+.chat-emote.chat-emote-LeRuse {
+  background-position: -143px -228px;
+  width: 33px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-LUL {
+  background-position: -156px -196px;
+  width: 36px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-MASTERB8 {
+  background-position: -40px -196px;
+  width: 38px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-MiyanoBird {
+  background-position: -302px -34px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-MiyanoComfy {
+  background-position: -302px -68px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-MiyanoSip {
+  background-position: -302px -102px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-MLADY {
+  background-position: -302px -136px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-monkaHmm {
+  background-position: -302px -170px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-monkaMEGA {
+  background-position: -302px -204px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-monkaS {
+  background-position: -302px -238px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-monkaVirus {
+  background-position: -0px -294px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-MOOBERS {
+  background-position: -34px -294px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-MotherFuckinGame {
+  background-position: -164px -362px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-Nappa {
+  background-position: -434px -196px;
+  width: 22px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-NeneLaugh {
+  background-position: -68px -294px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-NiceMeMe {
+  background-position: -402px -192px;
+  width: 27px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-NOBULLY {
+  background-position: -101px -328px;
+  width: 31px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-NOM {
+  background-position: -196px -362px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-NoTears {
+  background-position: -402px -314px;
+  width: 28px;
+  height: 28px;
+  margin-top: -28px; }
+
+.chat-emote.chat-emote-NotLikeThis {
+  background-position: -228px -362px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-NOTMYTEMPO {
+  background-position: -434px -68px;
+  width: 23px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-OBJECTION {
+  background-position: -102px -294px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-OhKrappa {
+  background-position: -434px -100px;
+  width: 23px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-OhMyDog {
+  background-position: -260px -362px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-OMEGALUL {
+  background-position: -134px -328px;
+  width: 31px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-OnlyPretending {
+  background-position: -0px -162px;
+  width: 37px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-ORDAH {
+  background-position: -136px -294px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-OsKrappa {
+  background-position: -77px -162px;
+  width: 36px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-OSTRIGGERED {
+  background-position: -54px -96px;
+  width: 50px;
+  height: 31px;
+  margin-top: -31px; }
+
+.chat-emote.chat-emote-OverRustle {
+  background-position: -178px -228px;
+  width: 33px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-PeepoHappy {
+  background-position: -336px -306px;
+  width: 28px;
+  height: 20px;
+  margin-top: -20px; }
+
+.chat-emote.chat-emote-PeepoRiot {
+  background-position: -115px -162px;
+  width: 36px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-PeepoS {
+  background-position: -170px -294px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-PeepoWeird {
+  background-position: -302px -272px;
+  width: 28px;
+  height: 20px;
+  margin-top: -20px; }
+
+.chat-emote.chat-emote-PEPE {
+  background-position: -402px -344px;
+  width: 28px;
+  height: 28px;
+  margin-top: -28px; }
+
+.chat-emote.chat-emote-PepeComfy {
+  background-position: -230px -170px;
+  width: 34px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-Pepega {
+  background-position: -204px -294px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-PepeHands {
+  background-position: -292px -362px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-PepeLaugh {
+  background-position: -238px -294px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-PepeMods {
+  background-position: -272px -294px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-PepoBan {
+  background-position: -213px -228px;
+  width: 33px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-PepoComfy {
+  background-position: -307px -328px;
+  width: 32px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-PepoFight {
+  background-position: -336px -0px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-PepoG {
+  background-position: -167px -328px;
+  width: 33px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-PepoGood {
+  background-position: -0px -96px;
+  width: 52px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-PepoHmm {
+  background-position: -202px -328px;
+  width: 33px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-PepOk {
+  background-position: -324px -362px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-PepoPirate {
+  background-position: -230px -0px;
+  width: 35px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-PepoThink {
+  background-position: -336px -34px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-PepoWant {
+  background-position: -183px -98px;
+  width: 38px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-PIKOHH {
+  background-position: -0px -228px;
+  width: 36px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-PogChamp {
+  background-position: -434px -132px;
+  width: 23px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-POGGERS {
+  background-position: -356px -362px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-POKE {
+  background-position: -336px -68px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-POTATO {
+  background-position: -272px -260px;
+  width: 28px;
+  height: 28px;
+  margin-top: -28px; }
+
+.chat-emote.chat-emote-RedCard {
+  background-position: -434px -34px;
+  width: 22px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-REE {
+  background-position: -306px -294px;
+  width: 28px;
+  height: 28px;
+  margin-top: -28px; }
+
+.chat-emote.chat-emote-Riperino {
+  background-position: -0px -394px;
+  width: 28px;
+  height: 28px;
+  margin-top: -28px; }
+
+.chat-emote.chat-emote-SadBenis {
+  background-position: -336px -102px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-sataniaLUL {
+  background-position: -336px -136px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-SEMPAI {
+  background-position: -153px -162px;
+  width: 36px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-shyLurk {
+  background-position: -336px -170px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-Sippy {
+  background-position: -370px -68px;
+  width: 29px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-SLEEPY {
+  background-position: -106px -96px;
+  width: 50px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-SMOrc {
+  background-position: -336px -204px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-SoDoge {
+  background-position: -102px -64px;
+  width: 52px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-SOTRIGGERED {
+  background-position: -267px -68px;
+  width: 33px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-SOY {
+  background-position: -0px -362px;
+  width: 32px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-SpookerZ {
+  background-position: -194px -196px;
+  width: 34px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-SPY {
+  background-position: -34px -362px;
+  width: 32px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-SUGOI {
+  background-position: -402px -0px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-SUGOwO {
+  background-position: -402px -32px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-SURPRISE {
+  background-position: -237px -328px;
+  width: 33px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-SWEATY {
+  background-position: -336px -238px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-TRUMPED {
+  background-position: -0px -130px;
+  width: 49px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-umaruCry {
+  background-position: -402px -64px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-UWOTM8 {
+  background-position: -402px -160px;
+  width: 28px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-WEEWOO {
+  background-position: -272px -328px;
+  width: 33px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-WeirdChamp {
+  background-position: -336px -272px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-weSmart {
+  background-position: -0px -328px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-WhoahDude {
+  background-position: -0px -424px;
+  width: 25px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-Wowee {
+  background-position: -402px -96px;
+  width: 30px;
+  height: 30px;
+  margin-top: -30px; }
+
+.chat-emote.chat-emote-YEE {
+  background-position: -434px -228px;
+  width: 20px;
+  height: 32px;
+  margin-top: -32px; }
+
+.chat-emote.chat-emote-ZOOMER {
+  background-position: -34px -328px;
+  width: 32px;
+  height: 32px;
+  margin-top: -32px; }

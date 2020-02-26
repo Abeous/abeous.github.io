@@ -25,16 +25,32 @@ const GENERIFY_OPTIONS = {
   'lag' : 'lag',
 };
 
-function formatEmote(data) {
-  emote = data.split(":")[0]
-  modifier = data.split(":")[1]
+function formatEmote(m) {
+  const input = m.split(':')
+  const emote = input[0].replace(/\s/g, '');
+  var suffix = "";
+  if (input.length > 1) {
+      suffix = input[1].replace(/\s/g, '');
+  }
+
+  const innerClasses = ['chat-emote', 'chat-emote-'+emote];
   
-  return `<span class="generify-container generify-emote-${emote}"><span title=" ${emote}" class="chat-emote chat-emote-${emote} chat-emote-${emote}-animate-forever></span></span>`
+  const generifyClasses = [
+    'generify-container',
+    'generify-emote-' + emote,
+    GENERIFY_OPTIONS[suffix] || "",
+  ];
+  
+  innerClasses.push('chat-emote-'+emote+'-animate-forever')
+  
+  const innerEmote = ' <span ' + ' title="' + m + '" class="' + innerClasses.join(' ') + '">' + m + ' </span>';
+  return ' <span class="' + generifyClasses.join(' ') + '">' + innerEmote + '</span>';
+  // return ` <span class="generify-container generify-emote-${emote}"><span title=" ${emote}" class="chat-emote chat-emote-${emote} chat-emote-${emote}-animate-forever"> ${emote} </span></span>`
 }
 
-function formatMessage(line, message) {
+function formatMessage(line) {
   username = line.split('|')[1].split(':')[0]
-  line_message = line.substring(line.indexOf(username) + username.length)
+  line_message = line.substring(line.indexOf(username) + username.length + 2)
 
   return `<div class="msg-chat msg-user msg-highlight"><a class="user ">${username}</a><span class="ctrl">: </span> <span class="text">${line_message}</span></div>`
 }
@@ -45,20 +61,13 @@ function setDisplay() {
     lines = data.split('\r\n')
     $.getJSON("./emotes.json", function(json) {
       emotesArray = Object.values(json.default)
-      regex = new RegExp(`(^|\\s)(${emotesArray.join('|')})(:(${Object.keys(GENERIFY_OPTIONS).join('|')}))?(?=$|\\s)`, 'gm')
-      var formatted_lines = []
-      for (line in lines) {
-        for (emote in emotesArray) {
-          (lines[line].includes(emotesArray[emote]))
-          ? formatted_lines[line] = lines[line].replace(regex, formatEmote(emotesArray[emote]))
-          : formatted_lines[line] = lines[line]
-        }
-      }
+      const emoticons = emotesArray.join('|')
+      const suffixes = Object.keys(GENERIFY_OPTIONS).join('|')
+      regex = new RegExp(`(^|\\s)(${emoticons})(:(${suffixes}))?(?=$|\\s)`, 'gm')
 
-      for (line in formatted_lines) {
-        var newLine = formatMessage(lines[line])
-        console.error(formatted_lines[line])
-        document.getElementById("chat_display").insertAdjacentHTML('beforeend', newLine)
+      for (line in lines) {
+        formatted_line = formatMessage(lines[line].replace(regex, formatEmote))
+        document.getElementById("chat_display").insertAdjacentHTML('beforeend', formatted_line)
       }
     })
   })

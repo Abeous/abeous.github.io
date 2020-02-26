@@ -1,0 +1,535 @@
+@import 'common';
+
+$emote-prefix: '.chat-emote-';
+$css-animated-emote-animations: ();
+$context-css-animated-emote-mixin: false;
+
+// Mixin for defining an emote with a css animation.
+// Should be used in combination with emote-animation mixin.
+@mixin css-animated-emote($name, $can-animate-forever: false) {
+    $context-css-animated-emote-mixin: true !global;
+    #{$emote-prefix + $name} {
+        @content;
+        animation: $css-animated-emote-animations;
+        $css-animated-emote-animations: () !global;
+
+        &:hover {
+            animation-iteration-count: infinite;
+        }
+
+        @if $can-animate-forever {
+            &-animate-forever {
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+
+    $context-css-animated-emote-mixin: false !global;
+}
+
+// Mixin for defining an animation within a css-animated-emote mixin.
+// $animation-properties takes the same properties as the `animation` property.
+// The mixin body takes the `@keyframes` definition.
+@mixin emote-animation($animation-properties: null){
+    @if not $context-css-animated-emote-mixin {
+        @error '`emote-animation` should be used inside `css-animated-emote` mixin!';
+    }
+
+    $index: length($css-animated-emote-animations);
+    $suffix: if($index != 0, -#{$index}, '');
+    $emote-name: str_slice( inspect(&), 2 + str_length($emote-prefix), -3 );
+    $animation-name: #{$emote-name}-anim#{$suffix};
+
+    @at-root {
+        @keyframes #{$animation-name} {
+            @content;
+        }
+    }
+
+    $css-animated-emote-animations:
+        append(
+            $css-animated-emote-animations,
+            $animation-properties $animation-name,
+            comma
+        ) !global;
+}
+
+@include css-animated-emote(OverRustle) {
+    @include emote-animation(100ms 7) {
+        0% { left: 0; }
+        100% { left: 3px; }
+    }
+}
+
+@include css-animated-emote(MLADY) {
+    transform-origin: 4px bottom;
+
+    @include emote-animation(250ms 3) {
+        0% {
+            transform: rotate(0deg);
+        }
+        30% {
+            transform: rotate(20deg);
+        }
+        80% {
+            transform: rotate(-10deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+}
+
+@include css-animated-emote(SpookerZ) {
+    @include emote-animation(250ms 3) {
+        0% {
+            transform: translate(0px 0px);
+        }
+        25% {
+            transform: translate(0px, 4px);
+        }
+        75% {
+            transform: rotate(-10deg);
+        }
+        100% {
+            transform: rotate(0deg);
+            transform-origin: 4px bottom;
+        }
+    }
+}
+
+@include css-animated-emote(DANKMEMES) {
+    @include emote-animation(1s 2) {
+        0%, 100% {
+            filter: hue-rotate(0deg);
+        }
+        50% {
+            filter: hue-rotate(360deg);
+        }
+    }
+}
+
+@include css-animated-emote(WEEWOO) {
+    @include emote-animation(1.5s 1) {
+        0%, 100% {
+            opacity: 1;
+        }
+        10% {
+            opacity: 0.5;
+            filter: hue-rotate(0deg);
+        }
+        11% {
+            filter: hue-rotate(170deg);
+        }
+        35% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.2;
+            filter: hue-rotate(170deg);
+        }
+        51% {
+            filter: hue-rotate(310deg);
+        }
+        65% {
+            opacity: 1;
+        }
+        90%{
+            opacity: 0.2;
+            filter: hue-rotate(310deg);
+        }
+        91% {
+            filter: hue-rotate(0deg);
+        }
+    }
+}
+
+@include css-animated-emote(Nappa) {
+    @include emote-animation(750ms 1) {
+        0% {
+            transform: translate(0px 0px) scale(0.5);
+        }
+        5%,15%,25%,35% {
+            transform: translate(0px, 3px);
+        }
+        15%,35%,55% {
+            transform: translate(0px, -3px);
+        }
+        10%,20%,30%,40%,50%{
+            transform: translate(3px, 0px);
+        }
+        15.1% {
+            transform: scale(0.5);
+            filter: hue-rotate(-5deg);
+        }
+        30.1% {
+            transform: scale(0.75);
+            opacity: 0.75;
+            filter: hue-rotate(-5deg) saturate(125%);
+        }
+        60%{
+            transform: scale(1.25);
+            filter: hue-rotate(-25deg) saturate(150%);
+            opacity: 0.75;
+        }
+        70%{
+            opacity: 0;
+        }
+        90%{
+            opacity: 0;
+            transform: scale(0.1);
+        }
+        100%{
+            transform: translate(0px, 0px) scale(1.0);
+            opacity: 1;
+        }
+    }
+}
+
+@include css-animated-emote(Hhhehhehe) {
+    @include emote-animation(500ms 1) {
+        0% {
+            transform: translate(0px, 0px) rotate(-0deg);
+        }
+        20% {
+            transform: translate(0px, 3px) rotate(-6deg);
+        }
+        40% {
+            transform: translate(0px, 0px) rotate(-0deg);
+        }
+        60% {
+            transform: translate(0px, 3px) rotate(-6deg);
+        }
+        80% {
+            transform: translate(0px, 0px) rotate(-0deg);
+        }
+        100% {
+            transform: translate(0px, 3px) rotate(-6deg);
+        }
+    }
+}
+
+@include css-animated-emote(REE) {
+    @include emote-animation(100ms 7) {
+        from { left: 0; }
+        to { left: 3px; }
+    }
+}
+
+@include css-animated-emote(ITSRAWWW) {
+    @include emote-animation(100ms 7) {
+        0% { left: 0; }
+        100% { left: 2px; }
+    }
+}
+
+@include css-animated-emote(DJPepo, true) {
+    @include emote-animation(500ms 7) {
+        0% { top: 10; }
+        100% { top: 12px; }
+    }
+}
+
+@include css-animated-emote(NeneLaugh, true) {
+    @include emote-animation(200ms 5) {
+        0% { transform: translate(0px, 0px); }
+        50% { transform: translate(0px, 3px); }
+        100% { transform: translate(0px, 0px); }
+    }
+}
+
+@include css-animated-emote(PepeLaugh, true) {
+    @include emote-animation(200ms 5) {
+        0% { transform: translate(0px, 0px); }
+        50% { transform: translate(0px, 3px); }
+        100% { transform: translate(0px, 0px); }
+    }
+}
+
+@keyframes emote-hit {
+    0% { color: #B91010; font-size:200%; }
+    1% { color: $color-light; font-size:190%; }
+    2% { color: #B91010; font-size:200%; }
+    3% { color: $color-light; font-size:190%; }
+    4% { color: #B91010; font-size:200%; }
+    100% { color: $color-light; font-size:120%; }
+}
+
+@keyframes rustle {
+    from { left: 0; }
+    to { left: 3px; }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dankmemes-anim {
+    0%, 100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes Shekels-anim {
+    0% {
+        top: -25px;
+    }
+    99% {
+        top: 30px;
+    }
+    100%{
+        top: -25px;
+    }
+}
+
+.chat-emote.chat-emote-NOBULLY:hover {
+    filter: invert(100%);
+}
+
+$spritesDir : '../assets/emotes-animated/';
+
+@mixin sprite-animation(
+        $file-name,
+        $frame-count,
+        $sprite-width,
+        $sprite-height,
+        $animation-length,
+        $repeat,
+        $end-on-last-frame: false,
+        $can-animate-forever: true,
+        $file-ext: '.png') {
+
+    $path: $spritesDir + $file-name + $file-ext;
+    $frame-width: $sprite-width / $frame-count;
+
+    @if $frame-width != round($frame-width) {
+        @error
+            "$sprite-width should be divisible by $frame-count to prevent blurry rendering
+            Error on sprite-animation \"#{$file-name}\"";
+    }
+
+    @keyframes #{$file-name}-anim {
+        0% { background-position: 0; }
+        100% { background-position: -#{$sprite-width}; }
+    }
+
+    .chat-emote-#{$file-name}{
+        width: $frame-width;
+        height: $sprite-height;
+        margin-top: -$sprite-height;
+        background: url($path) left center;
+        animation: #{$file-name}-anim $animation-length steps($frame-count) $repeat none;
+
+        @if $end-on-last-frame {
+            background-position: #{$sprite-width / $frame-count};
+        };
+
+        &:hover {
+            animation: #{$file-name}-anim $animation-length steps($frame-count) infinite;
+        }
+
+        @if $can-animate-forever {
+            &-animate-forever {
+                animation: #{$file-name}-anim $animation-length steps($frame-count) infinite;
+            }
+        }
+    }
+}
+
+@include sprite-animation(
+    $file-name: MiyanoHype,
+    $frame-count: 10,
+    $sprite-width: 320px,
+    $sprite-height: 32px,
+    $animation-length: 800ms,
+    $repeat: 3
+);
+
+@include sprite-animation(
+    $file-name: Clap,
+    $frame-count: 2,
+    $sprite-width: 44px,
+    $sprite-height: 32px,
+    $animation-length: 400ms,
+    $repeat: 5
+);
+
+@include sprite-animation(
+    $file-name: COGGERS,
+    $frame-count: 60,
+    $sprite-width: 1920px,
+    $sprite-height: 32px,
+    $animation-length: 800ms,
+    $repeat: 2
+);
+
+@include sprite-animation(
+    $file-name: CuckCrab,
+    $frame-count: 20,
+    $sprite-width: 640px,
+    $sprite-height: 32px,
+    $animation-length: 600ms,
+    $repeat: 5
+);
+
+@include sprite-animation(
+    $file-name: RaveDoge,
+    $frame-count: 29,
+    $sprite-width: 1276px,
+    $sprite-height: 30px,
+    $animation-length: 2000ms,
+    $repeat: 3
+);
+
+@include sprite-animation(
+    $file-name: PepoDance,
+    $frame-count: 10,
+    $sprite-width: 460px,
+    $sprite-height: 32px,
+    $animation-length: 500ms,
+    $repeat: 5
+);
+
+@include sprite-animation(
+    $file-name: PepeJam,
+    $frame-count: 4,
+    $sprite-width: 132px,
+    $sprite-height: 32px,
+    $animation-length: 250ms,
+    $repeat: 8
+);
+
+@include sprite-animation(
+    $file-name: LAG,
+    $frame-count: 9,
+    $sprite-width: 360px,
+    $sprite-height: 32px,
+    $animation-length: 4000ms,
+    $repeat: 2,
+    $end-on-last-frame: true,
+    $can-animate-forever: false
+);
+
+@include sprite-animation(
+    $file-name: SNAP,
+    $frame-count: 15,
+    $sprite-width: 750px,
+    $sprite-height: 32px,
+    $animation-length: 1000ms,
+    $repeat: 2
+);
+
+@include sprite-animation(
+    $file-name: VroomVroom,
+    $frame-count: 101,
+    $sprite-width: 3232px,
+    $sprite-height: 32px,
+    $animation-length: 4000ms,
+    $repeat: 2
+);
+
+@include sprite-animation(
+    $file-name: loliDance,
+    $frame-count: 27,
+    $sprite-width: 756px,
+    $sprite-height: 32px,
+    $animation-length: 3000ms,
+    $repeat: 2
+);
+
+@include sprite-animation(
+    $file-name: WAG,
+    $frame-count: 2,
+    $sprite-width: 76px,
+    $sprite-height: 32px,
+    $animation-length: 500ms,
+    $repeat: 10
+);
+
+@include sprite-animation(
+    $file-name: ComfyWAG,
+    $frame-count: 2,
+    $sprite-width: 76px,
+    $sprite-height: 32px,
+    $animation-length: 500ms,
+    $repeat: 10
+);
+
+
+@include sprite-animation(
+    $file-name: illyaTriggered,
+    $frame-count: 8,
+    $sprite-width: 256px,
+    $sprite-height: 32px,
+    $animation-length: 400ms,
+    $repeat: 4,
+    $can-animate-forever: true
+);
+
+@include sprite-animation(
+    $file-name: OhISee,
+    $frame-count: 20,
+    $sprite-width: 640px,
+    $sprite-height: 32px,
+    $animation-length: 1200ms,
+    $repeat: 2,
+    $can-animate-forever: false
+);
+
+@include sprite-animation(
+    $file-name: FeelsCountryMan,
+    $frame-count: 15,
+    $sprite-width: 480px,
+    $sprite-height: 32px,
+    $animation-length: 850ms,
+    $repeat: 4,
+    $can-animate-forever: true
+);
+
+@include sprite-animation(
+    $file-name: SNAP,
+    $frame-count: 6,
+    $sprite-width: 180px,
+    $sprite-height: 30px,
+    $animation-length: 360ms,
+    $repeat: 2,
+    $can-animate-forever: false
+);
+
+@include sprite-animation(
+    $file-name: HiHi,
+    $frame-count: 19,
+    $sprite-width: 570px,
+    $sprite-height: 30px,
+    $animation-length: 1900ms,
+    $repeat: 2,
+    $can-animate-forever: true
+);
+
+@include sprite-animation(
+    $file-name: HACKER,
+    $frame-count: 16,
+    $sprite-width: 768px,
+    $sprite-height: 32px,
+    $animation-length: 1600ms,
+    $repeat: 2,
+    $can-animate-forever: true
+);
+
+@include sprite-animation(
+    $file-name: KEKW,
+    $frame-count: 16,
+    $sprite-width: 1024px,
+    $sprite-height: 32px,
+    $animation-length: 400ms,
+    $repeat: 7,
+    $can-animate-forever: true
+);

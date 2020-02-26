@@ -1,0 +1,15 @@
+{
+  "name": "mentions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-scss":"node-sass mentions/sass/style.scss mentions/css/style.css && node-sass mentions/sass/emoticons.scss mentions/emoticons.css && node-sass mentions/sass/generify.scss mentions/css/generify.css && node-sass mentions/sass/anim.scss mentions/css/anim.css && node-sass mentions/sass/weather.scss mentions/css/weather.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
