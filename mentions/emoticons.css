@@ -883,3 +883,6 @@
   width: 32px;
   height: 32px;
   margin-top: -32px; }
+
+.chat-emote:first-child {
+  margin-top: -20px; }

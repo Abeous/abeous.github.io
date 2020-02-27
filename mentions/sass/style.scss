@@ -1015,8 +1015,8 @@ label small {
       opacity: 1;
       vertical-align: sub; }
 
-.msg-chat:first-child {
-  // margin-top: -1px; 
+.msg-chat:first-child .chat-emote {
+  // margin-top: 10px; 
 }
 
 .msg-chat:last-child {
