@@ -59,7 +59,7 @@ function formatMessage(line) {
 
 function setDisplay() {
   args = getUrlVars()
-  $.get("https://cors-anywhere.herokuapp.com/" + args.url, function(data) {
+  $.get("https://yacdn.org/serve/" + args.url, function(data) {
     console.error(typeof data)
     lines = data.split('\r\n')
     $.getJSON("./emotes.json", function(json) {
