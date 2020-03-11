@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile-mentions-scss": "node-sass mentions/sass/style.scss mentions/css/style.css && node-sass mentions/sass/emoticons.scss mentions/emoticons.css && node-sass mentions/sass/generify.scss mentions/css/generify.css && node-sass mentions/sass/anim.scss mentions/css/anim.css && node-sass mentions/sass/weather.scss mentions/css/weather.css",
-    "compile-emotetest-scss": "node-sass emotetest/sass/style.scss emotetest/css/style.css && node-sass emotetest/sass/anim.scss emotetest/css/anim.css && node-sass emotetest/sass/common.scss emotetest/css/common.css"
+    "mentions-scss":"node-sass --watch mentions/sass -o mentions/css",
+    "emotemaker-scss":"node-sass --watch emotemaker/sass -o emotemaker/css"
   },
   "keywords": [],
   "author": "",

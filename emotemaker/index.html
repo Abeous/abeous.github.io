@@ -6,12 +6,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/anim.css">
-    <script src="./js/script.js" type="text/javascript"></script>
+    <script src="./js/emotetest.js" type="text/javascript"></script>
   </head>
   <body>
-    <div>
+    <div id="emote_input_container">
       <div>
-        <input type="text" id="url_input">
+        <form onsubmit="return false">
+          <input type="text" id="emote_input">
+          <input type="submit" value="Enter" onclick="changeEmoteImage()">
+        </form>
       </div>
     </div>
     <div id="chat" class="chat chat-icons">
