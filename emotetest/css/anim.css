@@ -1,0 +1,19 @@
+@keyframes emote-hit {
+  0% {
+    color: #B91010;
+    font-size: 200%; }
+  1% {
+    color: #FFF7F9;
+    font-size: 190%; }
+  2% {
+    color: #B91010;
+    font-size: 200%; }
+  3% {
+    color: #FFF7F9;
+    font-size: 190%; }
+  4% {
+    color: #B91010;
+    font-size: 200%; }
+  100% {
+    color: #FFF7F9;
+    font-size: 120%; } }
