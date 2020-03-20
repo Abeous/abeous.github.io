@@ -21,6 +21,9 @@ body {
   position: fixed;
   left: 0%; 
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 /**
@@ -587,7 +590,7 @@ label small {
   display: grid;
   grid-template-rows: [output] 1fr [input];
   position: relative;
-  width: 100%;
+  width: 400px;
   height: 100%;
   overflow: hidden; }
 
@@ -595,7 +598,7 @@ label small {
   grid-row: output;
   overflow: hidden;
   width: 100%; 
-  // border-right: 4px solid rgba(255, 255, 255, 0.25);
+  border-right: 2px solid rgba(255, 255, 255, 0.25);
   // border-left: 4px solid rgba(255, 255, 255, 0.25);
 }
 
@@ -1822,6 +1825,14 @@ button.btn {
 
 
 // custom css 
+.chat-emote.chat-emote-MyNewEmote {
+  background-image: url(https://i.imgur.com/jk25OdV.png);
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 30px;
+  margin-top: -30px; 
+}
+
 .timestamp {
   font-size: 11px;
   color: #969696;
@@ -1834,22 +1845,76 @@ button.btn {
 }
 
 #emote_input_container {
+  border-right: 2px solid grey;
+  width: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
+#text-input-container {
+  text-align: center;
+  margin-bottom: 10px;
+}
 
 #emote_input {
-  margin-left: -125px;
-  position: relative;
+  border-radius: 2px;
+  border: none;
 }
 
-.chat-emote.chat-emote-MyNewEmote {
-  background-image: url(https://i.imgur.com/jk25OdV.png);
-  background-repeat: no-repeat;
-  width: 22px;
-  height: 30px;
-  margin-top: -30px; 
+//
+//  Drag and drop 
+//
+
+#dragndrop-container {
+}
+
+#dragndrop-text-container {
+  border: 2px dashed green;
+  width: 200px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+#dragndrop-text-p {
+  text-align: center;
+  width: 100px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+///////////////////////////////////
+//
+// Custom Height
+//
+///////////////////////////////////
+
+#custom-height-container {
+  text-align: center;
+}
+
+#custom-height-input {
+  width: 35px;
+  border-radius: 10px;
+  border: none
+}
+
+//////////////////////////////////
+
+
+#emote-submit-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  border-radius: 5px;
+}
+
+#submit-container {
+  margin-top: auto;
+  text-align: center;
 }
