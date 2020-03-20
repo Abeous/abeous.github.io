@@ -35,4 +35,12 @@ window.onload = function () {
   $('#emote-submit-button').click(() => {
     this.setEmotes($("#emote_input").val())
   })
+
+
+
+
+  $("#text-form").submit(function(e) {
+    e.preventDefault();
+    setEmotes($("#emote_input").val())
+  })
 }
