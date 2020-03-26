@@ -1946,7 +1946,7 @@ button.btn {
   position: relative; }
 
 #emote_input_container {
-  border-right: 2px solid grey;
+  border-right: 2px solid rgba(255, 255, 255, 0.25);
   width: 400px;
   display: flex;
   flex-direction: column; }
@@ -1961,6 +1961,7 @@ button.btn {
 
 #dragndrop-text-container {
   border: 2px dashed green;
+  border-radius: 10px;
   width: 200px;
   margin-left: auto;
   margin-right: auto;

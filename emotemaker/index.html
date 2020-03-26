@@ -35,9 +35,9 @@
           <input type="submit" style="display: none">
         </form>
       </div>
-      <div id="dragndrop-container" ondrop="drop(event)">
+      <div id="dragndrop-container" ondrop="drop(event)" ondragover="event.preventDefault()">
         <div id="dragndrop-text-container">
-        <p id="dragndrop-text-p" ondragover="event.preventDefault()">Drag and drop<br>Image here</p>
+        <p id="dragndrop-text-p">Drag and drop<br>Image here</p>
         </div>
       </div>
       <div id="custom-height-container">

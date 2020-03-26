@@ -24,6 +24,8 @@ function setEmotes(url) {
 }
 
 
+
+
 function drop(event) {
   event.preventDefault()
   var data = event.dataTransfer.getData("text")
@@ -40,6 +42,11 @@ window.onload = function () {
 
 
   $("#text-form").submit(function(e) {
+    e.preventDefault();
+    setEmotes($("#emote_input").val())
+  })
+
+  $("#custom-height-form").submit(function(e) {
     e.preventDefault();
     setEmotes($("#emote_input").val())
   })
