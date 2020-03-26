@@ -23,6 +23,15 @@ function setEmotes(url) {
   }
 }
 
+function urlParser(url) {
+  var vars = {};
+  url.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+      vars[key] = value;
+  });
+  return vars;
+}
+
+
 
 
 
@@ -38,7 +47,10 @@ window.onload = function () {
     this.setEmotes($("#emote_input").val())
   })
 
-
+  var parsedURL = this.urlParser(window.location.href)
+  if (parsedURL.image !== this.undefined) {
+    this.setEmotes(parsedURL.image)
+  }
 
 
   $("#text-form").submit(function(e) {
