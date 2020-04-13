@@ -1,3 +1,6 @@
-#test {
-  color: red;
+* {
+  display:block;
+  margin: 0px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
