@@ -1981,6 +1981,16 @@ button.btn {
   border-radius: 10px;
   border: none; }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
+
 #emote-submit-button {
   background-color: #4CAF50;
   border: none;
