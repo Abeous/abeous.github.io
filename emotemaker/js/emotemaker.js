@@ -43,12 +43,8 @@ window.onload = function () {
 
   $('.input-form').submit(e => {
     e.preventDefault()
-    var imgurl = $("#emote_inut").val()
+    const imgurl = $("#emote_input").val()
 
-    const imgurl = (e instanceof this.DragEvent)
-      ? e.dataTransfer.getData("text")
-      : $("#emote_input").val()
-      
-    setEmotes(imgurl)
+    this.setEmotes(imgurl)
   })
 }
