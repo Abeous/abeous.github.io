@@ -45,22 +45,22 @@ function formatEmote(m) {
   
   const innerEmote = ' <span ' + ' title="' + m + '" class="' + innerClasses.join(' ') + '">' + m + ' </span>';
   return ' <span class="' + generifyClasses.join(' ') + '">' + innerEmote + '</span>';
-  // return ` <span class="generify-container generify-emote-${emote}"><span title=" ${emote}" class="chat-emote chat-emote-${emote} chat-emote-${emote}-animate-forever"> ${emote} </span></span>`
 }
 
 function formatMessage(line) {
   username = line.split('|')[1].split(':')[0].trim()
   line_message = line.substring(line.indexOf(username) + username.length + 2)
   var timestamp = line.split('|')[0].trimStart()
-  console.error(timestamp)
 
   return `<div class="msg-chat msg-user msg-highlight"><div class="timestamp">${timestamp}</div><a class="user ">${username}</a><span class="ctrl">: </span> <span class="text">${line_message}</span></div>`
 }
 
-function setDisplay() {
-  args = getUrlVars()
+function displayDefault() {
+    $("#chat_display").html(`<div class="msg-chat msg-user msg-highlight"><div class="timestamp">1h 7m ago   </div><a class="user ">user1</a><span class="ctrl">: </span> <span class="text">i love you testuser</span></div><div class="msg-chat msg-user msg-highlight"><div class="timestamp">1h 6m ago   </div><a class="user ">user2</a><span class="ctrl">: </span> <span class="text">hey im mentioning you testuser</span></div><div class="msg-chat msg-user msg-highlight"><div class="timestamp">1h 6m ago   </div><a class="user ">user3</a><span class="ctrl">: </span> <span class="text">testuser <span class="generify-container generify-emote-SPY "> <span title=" SPY" class="chat-emote chat-emote-SPY chat-emote-SPY-animate-forever"> SPY </span></span> im mentioning you with an emote</span></div><div class="msg-chat msg-user msg-highlight"><div class="timestamp">1h 5m ago   </div><a class="user ">user4</a><span class="ctrl">: </span> <span class="text">testuser sup cool guy <span class="generify-container generify-emote-EZ "> <span title=" EZ" class="chat-emote chat-emote-EZ chat-emote-EZ-animate-forever"> EZ </span></span></span></div><div class="msg-chat msg-user msg-highlight"><div class="timestamp">55m 53s ago </div><a class="user ">user5</a><span class="ctrl">: </span> <span class="text">testuser testuser2 you guys wanna game?</span></div><div class="msg-chat msg-user msg-highlight"><div class="timestamp">29m 13s ago </div><a class="user ">user6</a><span class="ctrl">: </span> <span class="text">testuser ttyl my guy</span></div><div class="msg-chat msg-user msg-highlight"><div class="timestamp">26m 36s ago </div><a class="user ">user7</a><span class="ctrl">: </span> <span class="text">testuser <span class="generify-container generify-emote-billyWeird "> <span title=" billyWeird" class="chat-emote chat-emote-billyWeird chat-emote-billyWeird-animate-forever"> billyWeird </span></span></span></div><div class="msg-chat msg-user msg-highlight"><div class="timestamp">25m 4s ago  </div><a class="user ">user8</a><span class="ctrl">: </span> <span class="text">testuser testuser2 you playing cod or no?</span></div><div class="msg-chat msg-user msg-highlight"><div class="timestamp">14m 30s ago </div><a class="user ">user9</a><span class="ctrl">: </span> <span class="text">testuser testuser testuser testuser </span></div><div class="msg-chat msg-user msg-highlight"><div class="timestamp">13m 57s ago </div><a class="user ">user10</a><span class="ctrl">: </span> <span class="text">testuser pull requests welcome</span></div>`)
+}
+
+function setDisplay(args) {
   $.get("https://yacdn.org/serve/" + args.url, function(data) {
-    console.error(typeof data)
     lines = data.split('\r\n')
     $.getJSON("./emotes.json", function(json) {
       emotesArray = Object.values(json.default)
@@ -79,5 +79,10 @@ function setDisplay() {
 
 // test
 window.onload = function() {
-  this.setDisplay()
+  var urlargs = this.getUrlVars()
+  if (urlargs.url !== this.undefined){
+    this.setDisplay(urlargs)
+  } else {
+    this.displayDefault()
+  }
 }
