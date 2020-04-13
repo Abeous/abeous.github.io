@@ -1,4 +1,8 @@
 function setEmotes(url) {
+  if (url instanceof File) {
+    url = URL.createObjectURL(url)
+  }
+
   var img = new Image();
   img.src = url
   img.onload = function () {
@@ -32,6 +36,17 @@ function drop(event) {
   setEmotes(data)
 }
 
+function dragHandler(e) {
+  e.preventDefault()
+  textContainer = $("#dragndrop-text-container")
+
+  if (e.type === 'dragleave') {
+    textContainer.css('border', '2px dashed grey')
+  } else if (e.type === 'dragover') {
+    textContainer.css('border', '2px dashed green')
+  }
+}
+
 
 window.onload = function () {
   var parsedURL = this.urlParser(window.location.href)
@@ -46,5 +61,9 @@ window.onload = function () {
     const imgurl = $("#emote_input").val()
 
     this.setEmotes(imgurl)
+  })
+
+  $("#file-input-label").change("change", e => {
+    this.setEmotes(e.target.files[0])
   })
 }

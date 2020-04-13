@@ -35,8 +35,8 @@
           <input type="submit" style="display: none">
         </form>
       </div>
-      <div id="dragndrop-container" ondrop="drop(event)" ondragover="event.preventDefault()">
-        <div id="dragndrop-text-container">
+      <div id="dragndrop-container">
+        <div id="dragndrop-text-container" ondrop="drop(event)" ondragover="dragHandler(event)" ondragleave="dragHandler(event)">
         <p id="dragndrop-text-p">Drag and drop<br>Image here</p>
         </div>
       </div>
@@ -46,6 +46,12 @@
           <input type="text" id="custom-height-input">
           px
         </form>
+      </div>
+      <div id="file-input-container">
+        <label title="Select File" for="file-input" id="file-input-label" class="input-form">
+          <input type="file" id="file-input" style="display:none;" accept=".png, .jpg, .jpeg, .gif">
+          Select File
+        </label>
       </div>
       <div id='submit-container'>
         <form onsubmit="return false" id='submit-form' class='input-form'>

@@ -1869,7 +1869,7 @@ button.btn {
 }
 
 #dragndrop-text-container {
-  border: 2px dashed green;
+  border: 2px dashed grey;
   border-radius: 10px;
   width: 200px;
 
@@ -1918,4 +1918,34 @@ button.btn {
 #submit-container {
   margin-top: auto;
   text-align: center;
+}
+
+///////////////////////////////////
+
+#file-input-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  border: 1px solid grey;
+  border-radius: 5px;
+
+  // height: 50px;
+  // width: 120px;
+
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+
+#file-input-label {
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  height: 50px;
+  width: 120px;
 }
