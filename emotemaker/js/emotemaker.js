@@ -1,4 +1,4 @@
-function setEmotes(url) {
+function setEmotes(url, custom_height) {
   if (url instanceof File) {
     url = URL.createObjectURL(url)
   }
@@ -7,10 +7,13 @@ function setEmotes(url) {
   img.src = url
   img.onload = function () {
     var emoteElements = $('.chat-emote.chat-emote-MyNewEmote')
-    var custom_height_value = $("#custom-height-input").val()
+    
+    if (!custom_height) {
+        custom_height = $("#custom-height-input").val()
+    }
 
-    const new_height = (custom_height_value !== '') ? custom_height_value : 32
-    const new_width = (this.width * new_height) / this.height
+    var new_height = (custom_height !== '') ? custom_height : 32
+    var new_width = (this.width * new_height) / this.height
 
     for (element of emoteElements) {
       if (element === "length") { continue }
@@ -30,36 +33,29 @@ function urlParser(url) {
   return vars;
 }
 
-function drop(event) {
-  event.preventDefault()
-  var data = event.dataTransfer.getData("text")
-  setEmotes(data)
+function permalinkGen(url, height, withHost) {
+    if (withHost) {
+        return  window.location.host + window.location.pathname + `?image=${url}` + `&customHeight=${height}`
+    } else {
+        return  window.location.pathname + `?image=${url}` + `&customHeight=${height}`
+    }
 }
-
-function dragHandler(e) {
-  e.preventDefault()
-  textContainer = $("#dragndrop-text-container")
-
-  if (e.type === 'dragleave') {
-    textContainer.css('border', '2px dashed grey')
-  } else if (e.type === 'dragover') {
-    textContainer.css('border', '2px dashed green')
-  }
-}
-
 
 window.onload = function () {
   var parsedURL = this.urlParser(window.location.href)
 
   // checks if perma url exists and sets emotes if so
   if (parsedURL.image !== this.undefined) {
-    this.setEmotes(parsedURL.image)
+    this.setEmotes(parsedURL.image, parseInt(parsedURL.customHeight))
   }
 
   $('.input-form').submit(e => {
     e.preventDefault()
     const imgurl = $("#emote_input").val()
-
+    const heightForm = $("#custom-height-input").val()
+    
+    window.history.replaceState("", "", permalinkGen(imgurl, (heightForm) ? heightForm : "32"), false)
+      
     this.setEmotes(imgurl)
   })
 

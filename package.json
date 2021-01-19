@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "mentions-scss":"node-sass --watch mentions/sass -o mentions/css",
-    "emotemaker-scss":"node-sass --watch emotemaker/sass -o emotemaker/css"
+    "mentions-scss": "node-sass --watch mentions/sass -o mentions/css",
+    "emotemaker-scss": "node-sass --watch emotemaker/sass -o emotemaker/css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^5.0.0"
   }
 }

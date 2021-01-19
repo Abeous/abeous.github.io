@@ -1952,8 +1952,7 @@ button.btn {
   flex-direction: column; }
 
 #text-input-container {
-  text-align: center;
-  margin-bottom: 10px; }
+  text-align: center; }
 
 #emote_input {
   border-radius: 2px;
