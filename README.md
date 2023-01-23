@@ -1,7 +1,7 @@
-# abeous.github.io || poubelle.xyz
+# abeous.github.io
 
 Site for different projects, those include:
 
-[Mentions viewer](https://poubelle.xyz/mentions/ "Mentions Viewer")
+[Mentions viewer](https://abeous.github.io/mentions/ "Mentions Viewer")
 
-[Emote Maker](https://poubelle.xyz/emotemaker/ "Emote Maker")
+[Emote Maker](https://abeous.github.io/emotemaker/ "Emote Maker")
