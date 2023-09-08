@@ -1976,9 +1976,11 @@ button.btn {
   text-align: center; }
 
 #custom-height-input {
-  width: 35px;
-  border-radius: 10px;
-  border: none; }
+    width: 35px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+}
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -2018,3 +2020,47 @@ input[type=number] {
   justify-content: center;
   height: 50px;
   width: 120px; }
+
+#animated-container {
+    margin-top: 65px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#anim-frames-container {
+    margin-top: 3px;
+    text-align: center;
+}
+
+#anim-frames-input {
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+
+#anim-duration-container {
+    margin-top: 3px;
+    text-align: center;
+}
+
+#anim-duration-input {
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+
+#anim-iterations-container {
+    margin-top: 3px;
+    text-align: center;
+}
+
+#anim-iterations-input {
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}

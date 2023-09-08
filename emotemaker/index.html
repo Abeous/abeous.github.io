@@ -28,31 +28,55 @@
       </div>
     </div>
     <div id="emote_input_container">
-      <div id="text-input-container">
-        <span id="text-input-span">Enter URL:</span>
-        <form id="text-form" class='input-form'>
-          <input type="text" id="emote_input">
-          <input type="submit" style="display: none">
-        </form>
-      </div>
-      <div id="file-input-container">
-        <label title="Select File" for="file-input" id="file-input-label" class="input-form">
-          <input type="file" id="file-input" style="display:none;" accept=".png, .jpg, .jpeg, .gif">
-          Select File
-        </label>
-      </div>
-      <div id="custom-height-container">
-        <span id="custom-height-text-span">Custom Height:</span>
-        <form id="custom-height-form" class='input-form'>
-          <input type="number" id="custom-height-input">
-          px
-        </form>
-      </div>
-      <div id='submit-container'>
-        <form onsubmit="return false" id='submit-form' class='input-form'>
-          <input type="submit" value="Create Emote" id="emote-submit-button">
-        </form>
-      </div>
+        <div id="text-input-container">
+            <span id="text-input-span">Enter URL:</span>
+            <form id="text-form" class='input-form'>
+                <input type="text" id="emote_input">
+                <input type="submit" style="display: none">
+            </form>
+        </div>
+        <div id="file-input-container">
+            <label title="Select File" for="file-input" id="file-input-label" class="input-form">
+                <input type="file" id="file-input" style="display:none;" accept=".png, .jpg, .jpeg, .gif">
+                Select File
+            </label>
+        </div>
+        <div id="custom-height-container">
+            <span id="custom-height-text-span">Custom Height:</span>
+            <form id="custom-height-form" class='input-form'>
+                <input type="number" id="custom-height-input">
+                px
+            </form>
+        </div>
+        <div id="animated-container">
+            <form id="animated-check-form" class='input-form'>
+                <input type="checkbox" id="animated-check-input">
+                Animated
+            </form>
+        </div>
+        <div id="anim-frames-container">
+            <span id="anim-frames-text-span">Frame Count</span>
+            <form id="anim-frames-form" class='input-form'>
+                <input type="number" id="anim-frames-input" value="1">
+            </form>
+        </div>
+        <div id="anim-duration-container">
+            <span id="anim-duration-text-span">Animation Duration (ms)</span>
+            <form id="anim-duration-form" class='input-form'>
+                <input type="number" id="anim-duration-input" value="1000">
+            </form>
+        </div>
+        <div id="anim-iterations-container">
+            <span id="anim-iterations-text-span">Iterations</span>
+            <form id="anim-iterations-form" class='input-form'>
+                <input type="number" id="anim-iterations-input" value="5">
+            </form>
+        </div>
+        <div id='submit-container'>
+            <form onsubmit="return false" id='submit-form' class='input-form'>
+                <input type="submit" value="Create Emote" id="emote-submit-button">
+            </form>
+        </div>
     </div>
   </body>
 </html>
